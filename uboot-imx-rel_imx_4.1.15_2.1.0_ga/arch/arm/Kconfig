@@ -207,14 +207,15 @@ config TARGET_SPEAR310
 	select CPU_ARM926EJS
 	
 config TARGET_MX6ULL_ALIENTEK_EMMC
-    bool "Support mx6ull_alientek_emmc"
-    select MX6ULL
-    select DM
-    select DM_THERMAL
+	bool "Support mx6ull_alientek_emmc"
+	select MX6ULL
+	select DM
+	select DM_THERMAL
 
 config TARGET_SPEAR320
 	bool "Support spear320"
 	select CPU_ARM926EJS
+
 
 config TARGET_SPEAR600
 	bool "Support spear600"
