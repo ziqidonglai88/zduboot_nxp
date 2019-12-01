@@ -205,6 +205,12 @@ config TARGET_SPEAR300
 config TARGET_SPEAR310
 	bool "Support spear310"
 	select CPU_ARM926EJS
+	
+config TARGET_MX6ULL_ALIENTEK_EMMC
+    bool "Support mx6ull_alientek_emmc"
+    select MX6ULL
+    select DM
+    select DM_THERMAL
 
 config TARGET_SPEAR320
 	bool "Support spear320"
@@ -858,5 +864,7 @@ source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
 
 source "arch/arm/Kconfig.debug"
+source "board/freescale/mx6ull_alientek_emmc/Kconfig"
+
 
 endmenu
